@@ -1,0 +1,10 @@
+<h2>Cats!</h2>
+<div style="padding-top: 20px;" class="Cat Menu">
+    <button class="btn-primary" (click)="getCats()">
+        Display Cats
+    </button>
+    <div class="container" stlye="display: flex">
+        <img src="https://cataas.com/cat/{{cat.id}}" *ngFor="let cat of cats" />
+    </div>
+
+</div>
